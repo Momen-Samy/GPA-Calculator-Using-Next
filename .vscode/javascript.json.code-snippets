@@ -1,0 +1,13 @@
+{
+  "JSX ClassName": {
+    "prefix": ".",
+    "body": "<div className={styles['$0']}></div>",
+    "description": "Create a div with dynamic className from styles module"
+  },
+  "JSX Button": {
+    "prefix": "button",
+    "body": "<button className={styles['$0']}></button>",
+    "description": "Create a div with dynamic className from styles module"
+  },
+  
+}

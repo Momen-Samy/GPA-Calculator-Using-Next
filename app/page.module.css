@@ -1,0 +1,320 @@
+.Grades-box {
+  justify-content: center;
+  text-transform: capitalize;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  margin: 10px 40px;
+  padding: 20px;
+  border-radius: 8px;
+}
+@media (max-width: 630px) {
+  .Grades-box {
+    margin: 10px;
+    padding: 10px;
+  }
+}
+
+.Grades-box h2 {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+.Grades-box .Grades {
+  display: flex;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+@media (max-width: 630px) {
+  .Grades-box .Grades {
+    justify-content: space-around;
+  }
+}
+
+.Grades-box .Grades div {
+  display: flex;
+  justify-content: space-around;
+  min-width: 85px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  background-color: #e0e0e0;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 5px;
+}
+.Grades-box .Grades div input {
+  width: 50px;
+  font-size: 14px;
+  border: #e0e0e0;
+  border-radius: 3px;
+  padding: 1px 7px;
+}
+.HowToCalc span {
+  display: block;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+/* GPA Main Box */
+.GPA-box {
+  background-color: #ffffff;
+  border-radius: 8px;
+  margin: 10px 40px;
+  padding: 20px;
+  position: relative;
+  min-height: 130px;
+}
+@media (max-width: 630px) {
+  .GPA-box {
+    margin: 10px;
+  }
+}
+
+/*  */
+.semes {
+  padding: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  border: 1px solid #eee;
+  border-radius: 5px;
+}
+.semes h3 {
+  font-size: 30px;
+  text-transform: capitalize;
+}
+.semes h3 + i {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.semes form {
+  margin-top: 10px;
+  display: flex;
+  position: relative;
+}
+.semes h3 + i:hover {
+  transition: 0.5s;
+  color: red;
+}
+
+.semes input,
+.semes select {
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #d1cfcf;
+  outline: none;
+}
+.semes select {
+  color: #535353;
+  margin: 0 5px;
+}
+.semes form input:last-of-type {
+  width: 120px;
+  text-align: center;
+}
+@media (max-width: 630px) {
+  .semes form {
+    flex-wrap: wrap;
+    width: 245px;
+    border-radius: 6px;
+    border: 1px solid #d0cbcb;
+  }
+  .semes form input:first-of-type {
+    width: 100%;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .semes form select,
+  .semes form input:last-of-type {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    flex-basis: 50%;
+    margin: 0;
+  }
+  .semes form select {
+    border-bottom-right-radius: 0;
+  }
+  .semes form input:last-of-type {
+    border-bottom-left-radius: 0;
+  }
+}
+.semes form i {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.semes form i:hover,
+.changeredWhenHover {
+  transition: 0.5s;
+  color: red;
+}
+@media (max-width: 630px) {
+  .semes form i {
+    position: absolute;
+    top: 50%;
+    right: -40px;
+    transform: translateY(-50%);
+  }
+}
+.semes .calcAndadd {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.semes .calcAndadd p {
+  margin: 0;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.semes .calcAndadd .add-course {
+  transition: 0.5s;
+  padding: 4px 10px;
+  text-transform: capitalize;
+  background-color: white;
+  border: 1px solid #1690ed;
+  color: #1690ed;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.semes .calcAndadd .add-course:hover {
+  transform: scale(1.1);
+}
+@media (max-width: 630px) {
+  .semes .calcAndadd {
+    flex-wrap: wrap;
+    justify-content: end;
+  }
+  .semes .calcAndadd p {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+.semes .calcAndadd .add-course p {
+  font-size: 20px;
+}
+.semes .calcAndadd .add-course i {
+  margin-right: 5px;
+  font-size: 15px;
+  position: relative;
+  top: 2px;
+}
+
+/* add semes button */
+.add-semester {
+  transition: 0.5s;
+  text-transform: capitalize;
+  background-color: white;
+  border: 1px solid #1690ed;
+  color: #1690ed;
+  font-size: 17px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding-inline: 0;
+  position: relative;
+}
+.add-semester:hover {
+  transform: scale(1.1);
+}
+.add-semester p {
+  margin: 0;
+  padding: 4px 10px;
+  font-size: 20px;
+}
+
+.add-semester i {
+  margin-left: 10px;
+  font-size: 20px;
+  position: relative;
+  top: 2px;
+}
+/*  */
+.progress-container {
+  position: absolute;
+  right: 10px;
+  width: 200px;
+  height: 200px;
+  background-color: #fbf8f8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.progress-circle::before {
+  content: "0.00";
+  position: absolute;
+  color: #4a5b7d;
+  z-index: 10;
+  width: 10px;
+  height: 10px;
+  right: 88px;
+  top: 9px;
+  transform: rotate(135deg);
+  font-size: 18px;
+}
+.progress-circle {
+  transform: rotate(225deg);
+  position: relative;
+  width: 85%;
+  height: 85%;
+  /* background: conic-gradient(red 0% 0%, #ddd 0% 74%, white 74% 100%); */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 630px) {
+  .progress-container {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100%;
+  }
+}
+.progress-circle::after {
+  content: "4.00";
+  position: absolute;
+  color: #4a5b7d;
+  z-index: 10;
+  width: 10px;
+  height: 10px;
+  left: 19px;
+  bottom: 98px;
+  transform: rotate(135deg);
+  font-size: 18px;
+}
+.progress-value {
+  transform: rotate(135deg);
+  position: absolute;
+  width: 85%;
+  height: 85%;
+  background-color: #fff; /* White inner circle */
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.progress-value h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #1a1a1a;
+}
+
+.progress-value p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
